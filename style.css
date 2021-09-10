@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+/* -------------------------------------------------------------LAPTOP VIEW------------------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------------------------------------LAPTOP SECTION------------------------------------------------------ */
+
+section 
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:black;
+}
+
+header 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo 
+{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul 
+{
+    position: relative;
+    display: flex;
+}
+
+header ul li 
+{
+    list-style: none;
+}
+
+header ul li a 
+{
+    display: inline-block;
+    color:whitesmoke;
+    font-weight: 500;
+    margin-left: 35px;
+    text-decoration: none;
+    background: #017143;
+    border-radius: 40px;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+}
+
+.content 
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.content .textBox 
+{
+    position: relative;
+    max-width: 600px;
+    margin-top: 10rem;
+}
+
+.content .textBox h2 
+{
+    color: whitesmoke;
+    font-size: 4rem;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span 
+{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+} 
+
+.content .textBox p 
+{
+    color:whitesmoke;
+}
+
+.content .textBox a 
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 6px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox 
+{
+    widows: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img 
+{
+    max-width: 340px;
+}
+
+.thumb 
+{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    transition: 0.5s;
+}
+
+.thumb li 
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.thumb li:hover 
+{
+    transform: translateY(-15px);
+} 
+
+.thumb li img 
+{
+    max-width: 60px;
+}
+
+.sci 
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.sci li 
+{
+    list-style: none;
+}
+
+.sci li a 
+{
+    display: inline-block;
+    margin: 10px 0;
+    transform: scale(0.6);
+    filter: invert(1)
+}
+
+.circle 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+/* -------------------------------------------------------------LAPTOP FOOTER------------------------------------------------------ */
+
+.footer
+{
+    margin-top: -20px;
+    color: var(--primary-txt-color);
+    background-color:black;
+}
+
+.all__lists
+{
+    padding-top: 3rem;
+    width: 95%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: whitesmoke;
+}
+
+.all__lists > ul
+{
+    margin: 0 auto;
+    font-size: 1.5rem; 
+    text-align: center;
+}
+
+.all__lists > ul li a
+{
+    font-size: 1.5rem;
+
+}
+
+.footer__center
+{
+    display: flex;
+    width: 92%;
+    margin: 0 auto 1rem auto;
+    justify-content: space-between;
+}
+
+.feedback
+{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.feedback h2
+{
+    margin: 10px;
+}
+
+.feedback .grey__btn
+{
+    background-color: whitesmoke;
+    color: var(--primary-txt-color);
+    transition: all .5s;
+    display: inline-block;
+    padding: 6px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.feedback .grey__btn:hover
+{
+    background-color: #093bc5!important;
+}
+
+.social
+{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.download
+{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    color: whitesmoke;   
+}
+
+.copyright
+{
+    margin: 0 auto;
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+}
+
+.copyright p
+{
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.all__lists--2{
+    width: 100%;
+    display: none;    
+}
+
+.all__lists--2 ul
+{
+    margin: 1rem;
+    width: inherit;    
+}
+
+.all__lists--2 ul:first-child
+{
+   border-right: 1px solid var(--primary-txt-color);
+   font-weight: bold;
+}
+
+.all__lists--2 ul li a
+{
+
+    font-size: 1.5rem;
+}
+
+.icon
+{
+    margin: 2px 8px;
+    margin-bottom: 1rem;
+}
+
+.link
+{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------MOBILE VIEW------------------------------------------------------ */
+
+@media only screen and (max-width: 1200px) 
+{
+
+/* -------------------------------------------------------------MOBILE FOOTER------------------------------------------------------ */    
+
+    .footer
+    {
+        margin-top: -20px;
+        color: var(--primary-txt-color);
+        background-color:black;
+        width: 910px;
+    }
+
+    .all__lists
+    {
+        padding-top: 2rem;
+        width: 910px;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .all__lists > ul
+    {
+        margin: 0 auto;
+        font-size: 1.2rem; 
+        justify-content: space-between;   
+    }
+
+    .all__lists > ul li a
+    {
+        font-size: 1.2rem;
+    }
+
+    .footer__center
+    {
+        display: flex;
+        width: 95%;
+        margin: 0 auto 1rem auto;
+        justify-content: space-between;
+    }
+
+    .feedback
+    {
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        font-size: 1.25rem;
+    }
+
+    .feedback h2
+    {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .feedback .grey__btn
+    {
+        background-color: whitesmoke;
+        color: var(--primary-txt-color);
+        transition: all .5s;
+        display: inline-block;
+        padding: 6px 20px;
+        background: #017143;
+        color: #fff;
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+        margin-bottom: 1rem;  
+    }
+
+    .feedback .grey__btn:hover
+    {
+        background-color: #093bc5!important;
+    }
+
+    .social
+    {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-bottom: 2rem;
+        color: whitesmoke;   
+    }
+
+    .social h2
+    {
+        font-size: 1.3rem;
+    }
+
+    .download
+    {
+        margin: 0 auto;
+        width: 95%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: whitesmoke;
+        margin-bottom: 1rem;
+    }   
+
+    .copyright
+    {
+        margin: 0 auto;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 3rem;
+        color: whitesmoke;
+    }
+
+    .copyright p
+    {
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .all__lists--2
+    {
+        width: 100%;
+        display: none;    
+    }
+
+    .all__lists--2 ul
+    {
+        margin: 1rem;
+        width: inherit;    
+    }
+
+    .all__lists--2 ul:first-child
+    {
+       border-right: 1px solid var(--primary-txt-color);
+       font-weight: bold;
+    }
+
+    .all__lists--2 ul li a
+    {
+        font-size: 1.5rem;
+    }
+
+    .icon
+    {
+        margin: 2px 6px;
+        margin-bottom: 0rem;
+    }
+
+   .link
+    {
+        color:whitesmoke;
+        text-decoration: none;
+    }
+}
+
+ /* -------------------------------------------------------------MOBILE SECTION------------------------------------------------------ */   
+
+ @media only screen and (max-width: 1200px)
+ {
+    section 
+    {
+        width: 910px;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        background: black;
+    }
+
+    .navbar
+    {
+        margin-top: 20px;
+
+    }
+
+    header 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 910px;
+        padding: 50px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo 
+    {
+        position: relative;
+        max-width: 100px;
+    }
+
+    header ul 
+    {
+        position: relative;
+        display: flex;
+        width: auto;
+    }
+
+    header ul li 
+    {
+        list-style: none;
+        width: auto;
+    }
+
+    header ul li a 
+    {
+        display: inline-block;
+        color:whitesmoke;
+        font-size: 1.2rem;
+        margin-left: 35px;
+        text-decoration: none;
+        background: #017143;
+        border-radius: 40px;
+        padding: 6px 20px;
+        letter-spacing: 1px;
+    }
+
+    .content 
+    {
+        position: relative;
+        width: 990px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .content .textBox 
+    {
+        position: relative;
+        max-width: 400px;
+        margin-top: 5rem;
+        font-size: 1.2rem;
+    }
+
+    .content .textBox h2 
+    {
+        color: whitesmoke;
+        font-size: 3rem;
+        font-weight: 500;
+        margin: 0 auto;
+        
+    
+    }
+
+    .content .textBox h2 span 
+    {
+        color: #017143;
+        font-size: 4rem;
+        font-weight: 900;
+        margin: 0 auto;
+    } 
+
+    .content .textBox p 
+    {
+        color:whitesmoke;
+        font-size: 2rem;
+        text-align: left;
+        
+    }
+
+    .content .textBox a 
+    {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 6px 20px;
+        background: #017143;
+        color: #fff;
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+    .content .imgBox 
+    {
+        widows: 60px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .content .imgBox img 
+    {
+        position: relative;
+        width: 380px;
+        height: 400px;
+        margin-top: 210px;  
+        margin-right: -150px; 
+    }
+
+    .thumb 
+    {
+        position: absolute;
+        left: 30%;
+        bottom: 3px;
+        transform: translateX(-50%);
+        display: flex;
+        transition: 0.5s;
+
+    }
+
+    .thumb li 
+    {
+        list-style: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .thumb li:hover 
+    {
+        transform: translateY(-15px);
+    } 
+
+    .thumb li img 
+    {
+        max-width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .sci 
+    {
+        position: absolute;
+        top: 5%;
+        right: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .sci li 
+    {
+        list-style: none;
+    }
+
+    .sci li a 
+    {
+        display: inline-block;
+        margin: 10px 0;
+        transform: scale(0.6);
+        filter: invert(1)
+    }
+
+    .circle 
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 910px;
+        background: #017143;
+        clip-path: circle(400px at right 650px);
+    }
+
+    .background
+    {
+        background-color: black;
+        margin-bottom: 60rem;
+        display: flex;
+    }
+
+}
+    
